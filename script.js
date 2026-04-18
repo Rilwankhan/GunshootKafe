@@ -1,7 +1,6 @@
 /* ===========================
    GUNSHOT KAFE — script.js
 =========================== */
-
 // ===== PRODUCT DATA =====
 const products = [
   // BURGERS
