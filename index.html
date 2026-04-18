@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunshot Kafe – Best Burgers & Fast Food in Trichy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">🔥</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p>Loading Gunshot Kafe…</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">GUNSHOT<span>KAFE</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#combos">Combos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1600&q=80" alt="Hero burger" loading="eager" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🔥 Now Open in Trichy</div>
+      <h1 class="hero-title">Fire Up Your<br /><span>Hunger</span> 🔥</h1>
+      <p class="hero-sub">Best Burgers &amp; Fast Food in Trichy — Crafted Hot, Served Bold.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="https://wa.me/919XXXXXXXXX" target="_blank" class="btn btn-outline">Order Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>50+</strong><span>Menu Items</span></div>
+        <div class="stat"><strong>4.8★</strong><span>Rating</span></div>
+        <div class="stat"><strong>Fast</strong><span>Delivery</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section">
+    <div class="section-header">
+      <span class="section-tag">Our Menu</span>
+      <h2>What We <span>Serve</span></h2>
+      <p>Freshly made, always delicious. Filter by your craving.</p>
+    </div>
+
+    <!-- Search + Filter -->
+    <div class="menu-controls">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search menu items…" />
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="burger">🍔 Burgers</button>
+        <button class="filter-btn" data-cat="pizza">🍕 Pizza</button>
+        <button class="filter-btn" data-cat="juice">🥤 Juices</button>
+        <button class="filter-btn" data-cat="fastfood">🍟 Fast Food</button>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <!-- COMBO OFFERS -->
+  <section id="combos" class="combos-section">
+    <div class="section-header">
+      <span class="section-tag">Special Deals</span>
+      <h2>Combo <span>Offers</span></h2>
+      <p>More food, more value. Pick your combo!</p>
+    </div>
+    <div class="combos-grid" id="combosGrid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Kafe interior" loading="lazy" />
+    </div>
+    <div class="about-content">
+      <span class="section-tag">Our Story</span>
+      <h2>Born from a <span>Passion</span> for Bold Flavours</h2>
+      <p>Gunshot Kafe started with one simple idea — serve food that hits hard. Located in the heart of Trichy, we craft every burger, every pizza, every sip with love and fire.</p>
+      <p>We believe fast food should never feel cheap. Our ingredients are fresh, our recipes are bold, and our vibes are always hot.</p>
+      <div class="about-features">
+        <div class="af-item">🔥 <strong>Fresh Ingredients</strong></div>
+        <div class="af-item">⚡ <strong>Fast Delivery</strong></div>
+        <div class="af-item">💯 <strong>100% Satisfaction</strong></div>
+        <div class="af-item">📲 <strong>Easy WhatsApp Orders</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <span class="section-tag">Find Us</span>
+      <h2>Visit <span>Gunshot Kafe</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="cc-icon">📍</div>
+        <h4>Location</h4>
+        <p>Gunshot Kafe, Trichy,<br/>Tamil Nadu, India</p>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">⏰</div>
+        <h4>Hours</h4>
+        <p>Mon – Sun<br/>11:00 AM – 11:00 PM</p>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">📲</div>
+        <h4>WhatsApp Orders</h4>
+        <p>+91 XXXXXXXXXX<br/>Quick & Easy Ordering</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">GUNSHOT<span>KAFE</span></div>
+      <p>Best Burgers & Fast Food in Trichy 🔥</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#combos">Combos</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Gunshot Kafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919XXXXXXXXX?text=Hello%20Gunshot%20Kafe%2C%20I%20want%20to%20place%20an%20order!" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.118 1.523 5.855L.057 23.943l6.244-1.638A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.894 0-3.661-.523-5.172-1.432l-.37-.22-3.706.972.989-3.614-.241-.373A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt="" loading="lazy" />
+        <div class="modal-badge" id="modalBadge"></div>
+      </div>
+      <div class="modal-info">
+        <h3 id="modalName"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-price" id="modalPrice"></div>
+        <button class="btn btn-primary w-full" id="modalOrderBtn">Order Now via WhatsApp 📲</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER FORM MODAL -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-box order-modal-box">
+      <button class="modal-close" id="orderModalClose">✕</button>
+      <h3>Place Your Order 🛒</h3>
+      <p class="order-sub">We'll confirm via WhatsApp!</p>
+      <div class="order-form" id="orderForm">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="custName" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="custPhone" placeholder="+91 XXXXXXXXXX" required />
+        </div>
+        <div class="form-group">
+          <label>Delivery Address</label>
+          <textarea id="custAddress" placeholder="Enter your full address" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Product</label>
+          <input type="text" id="custProduct" readonly />
+        </div>
+        <div class="form-group">
+          <label>Quantity</label>
+          <div class="qty-control">
+            <button type="button" id="qtyMinus">−</button>
+            <input type="number" id="custQty" value="1" min="1" max="20" />
+            <button type="button" id="qtyPlus">+</button>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary w-full" id="submitOrder">Send via WhatsApp 🚀</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
