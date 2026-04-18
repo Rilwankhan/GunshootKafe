@@ -332,7 +332,7 @@ document.getElementById("submitOrder").addEventListener("click", () => {
   const message = `Hello Gunshot Kafe,\n\nI would like to order:\n\n🍔 Product: ${product}\n📦 Quantity: ${qty}\n👤 Name: ${name}\n📞 Phone: ${phone}\n📍 Address: ${address}\n\nPlease confirm my order. Thank you!`;
 
   const encoded = encodeURIComponent(message);
-  const waNumber = "919XXXXXXXXX"; // Replace with actual number
+  const waNumber = "918608865811"; // Replace with actual number
   window.open(`https://wa.me/${waNumber}?text=${encoded}`, "_blank");
   closeModal("orderModal");
 });
